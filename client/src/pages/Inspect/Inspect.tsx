@@ -7,7 +7,11 @@ type Props = {
 };
 
 function Inspect(props: Props) {
-  return <div className="Inspect"></div>;
+  return (
+    <div className="Inspect">
+      <h1>Inspekcja sanitarna</h1>
+    </div>
+  );
 }
 
 export default Inspect;

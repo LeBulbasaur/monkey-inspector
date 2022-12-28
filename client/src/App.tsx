@@ -14,7 +14,10 @@ function App() {
             path="/inspect"
             element={<Inspect image={image} setImage={setImage} />}
           />
-          <Route path="/" element={<Upload />} />
+          <Route
+            path="/"
+            element={<Upload image={image} setImage={setImage} />}
+          />
         </Routes>
       </div>
     </BrowserRouter>
