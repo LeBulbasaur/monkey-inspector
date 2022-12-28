@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDropzone } from "react-dropzone";
 import arrow from "../../assets/Arrow.png";
@@ -15,6 +15,12 @@ type Props = {
 function Upload(props: Props) {
   const navigate = useNavigate();
 
+  const imageData = useMemo(() => {
+    if (props.image) {
+      return URL.createObjectURL(props.image);
+    }
+  }, [props.image]);
+
   const onDrop = useCallback((acceptedFiles: any) => {
     props.setImage(acceptedFiles[0]);
   }, []);
@@ -28,8 +34,6 @@ function Upload(props: Props) {
     },
     maxFiles: 1,
   });
-
-  if (props.image) console.log(props.image);
 
   return (
     <div className="upload__main">
@@ -55,9 +59,7 @@ function Upload(props: Props) {
         {...getRootProps()}
         className="upload__box"
         style={{
-          backgroundImage: props.image
-            ? `url("${URL.createObjectURL(props.image)}")`
-            : "none",
+          backgroundImage: props.image ? `url("${imageData}")` : "none",
           backgroundColor: props.image ? "transparent" : "#F0E9D3",
         }}
       >
@@ -93,7 +95,11 @@ function Upload(props: Props) {
             const res = await handleUpload(props.image);
             const { data } = await res;
 
-            if (data.message === 1) navigate("/inspect");
+            if (data.message === 1) {
+              navigate("/inspect");
+            } else {
+              alert("Something went wrong. Please try again.");
+            }
           }
         }}
       />
