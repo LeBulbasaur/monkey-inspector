@@ -2,6 +2,7 @@
     background-color: #F7EDDB;
     color:#A25B5B;
     font-family: 'Literata', serif;
+    overflow-x: hidden;
 }
 body{
     margin: 0;
