@@ -37,15 +37,15 @@ function Upload(props: Props) {
 
   return (
     <div className="upload__main">
-      <div className="upload__header">
+      <div className="inspect__header">
         <img
-          className="upload__arrow upload__arrow__left"
+          className="inspect__arrow inspect__arrow__left"
           src={arrow}
           alt="arrow"
         />
         <h1>Monkey Inspector</h1>
         <img
-          className="upload__arrow upload__arrow__right"
+          className="inspect__arrow inspect__arrow__right"
           src={arrow}
           alt="arrow"
         />
@@ -68,6 +68,7 @@ function Upload(props: Props) {
           <>
             <div className="upload__addfiles">
               <svg
+                className="upload__addfiles__plus"
                 width="15"
                 height="15"
                 viewBox="0 0 15 15"
@@ -82,14 +83,8 @@ function Upload(props: Props) {
           </>
         ) : null}
       </div>
-      <p className="upload__annotation">
-        NOTE: the program recognizes five species of monkeys: gorilla,
-        orangutan, capuchin, baboon, chimpanzee
-      </p>
-      <img
-        className="monkey__falling"
-        src={monkey_falling}
-        alt="monkey falling"
+      <div
+        className="upload__inspect__button"
         onClick={async () => {
           if (props.image) {
             const res = await handleUpload(props.image);
@@ -102,8 +97,19 @@ function Upload(props: Props) {
             }
           }
         }}
+      >
+        INSPECT
+      </div>
+      <p className="upload__annotation">
+        NOTE: the program recognizes five species of monkeys: gorilla,
+        orangutan, capuchin, baboon, chimpanzee
+      </p>
+      <img
+        className="monkey__falling"
+        src={monkey_falling}
+        alt="monkey falling"
       />
-      <hr className="upload__bottom__line" />
+      <hr className="bottom__line" />
     </div>
   );
 }

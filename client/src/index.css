@@ -4,6 +4,53 @@
     font-family: 'Literata', serif;
     overflow-x: hidden;
 }
+
 body{
     margin: 0;
+}
+
+.inspect__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.inspect__header h1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 95px;
+}
+
+.inspect__arrow {
+    width: 25%;
+    height: 20px;
+}
+
+.inspect__arrow__right {
+    transform: rotate(180deg);
+}
+
+.monkey__hanging {
+    position: absolute;
+    right: -50px;
+    top: 67px;
+    width: 236px;
+}
+
+
+.monkey__falling {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 238px;
+}
+
+.bottom__line {
+    border: 1px solid #809A6F;
+    width: 100%;
+
+    position: absolute;
+    bottom: 30px;
 }
