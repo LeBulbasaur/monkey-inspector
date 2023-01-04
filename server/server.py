@@ -4,8 +4,7 @@ from werkzeug.utils import secure_filename
 import os
 
 UPLOAD_FOLDER = "server/uploads"
-ALLOWED_EXTENSIONS = {'png'}
-
+ALLOWED_EXTENSIONS = {'png','jpeg','jpg'}
 app = Flask(__name__, static_folder='../client/src')
 CORS(app)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
@@ -23,12 +22,10 @@ def home():
 def upload():
     if request.method == 'POST':
         if 'file' not in request.files:
-            flash('No file part')
-            data = {"message": 0}
+            data = {"message": 69}
             return jsonify(data)
         file = request.files['file']
         if file.filename == '':
-            flash('No selected file')
             data = {"message": 0}
             return jsonify(data) 
         if file and allowed_file(file.filename):
@@ -36,6 +33,13 @@ def upload():
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             data = {"message": 1}
             return jsonify(data)
+
+# @app.route("/upload", methods=["POST","GET"])
+# def test():
+#     if request.method == 'POST':
+#         flash('XD')
+#         data = {"message": 0}
+#         return jsonify(data)
 
 if __name__ == "__main__":
     app.run(port=3000)
