@@ -10,14 +10,14 @@ import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 
-export default function Model(props: any) {
+export default function Model(props: any): JSX.Element {
   const { nodes, materials } = useGLTF("/earth.glb");
   const group = useRef<THREE.Group>();
-  useFrame((state, delta) => {
-    if (group.current) {
-      group.current.rotation.y -= 0.001;
-    }
-  });
+  // useFrame((state, delta) => {
+  //   if (group.current) {
+  //     group.current.rotation.y -= 0.001;
+  //   }
+  // });
   return (
     <group {...props} dispose={null} ref={group}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -26,6 +26,7 @@ export default function Model(props: any) {
             <mesh
               castShadow
               receiveShadow
+              // @ts-ignore
               geometry={nodes.Sphere_Material002_0.geometry}
               material={materials["Material.002"]}
             />

@@ -12,7 +12,7 @@ type Props = {
   setImage: React.Dispatch<React.SetStateAction<File | undefined>>;
 };
 
-function Upload(props: Props) {
+function Upload(props: Props): JSX.Element {
   const navigate = useNavigate();
 
   const imageData = useMemo(() => {
