@@ -7,6 +7,7 @@
 
 body{
     margin: 0;
+    max-width: 1920px;
 }
 
 .inspect__header {
@@ -53,4 +54,24 @@ body{
 
     position: absolute;
     bottom: 30px;
+}
+
+@media screen and (max-width: 1110px) {
+    .inspect__header h1 {
+        font-size: 5vw;
+        line-height: 59px;
+    }
+
+    .monkey__hanging {
+        display: none;
+    }
+
+    .monkey__falling {
+        display: none
+    }
+
+    .bottom__line {
+        display: none;
+    }
+    
 }

@@ -80,3 +80,20 @@
 
     color: #CC9C75;
 }
+
+@media screen and (max-width: 1024px) {
+    .upload__box{
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .upload__inspect__button{
+        width: 200px;
+    }
+
+    .upload__annotation{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+}
