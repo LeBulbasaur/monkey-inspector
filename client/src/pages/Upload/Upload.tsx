@@ -87,13 +87,17 @@ function Upload(props: Props): JSX.Element {
         className="upload__inspect__button"
         onClick={async () => {
           if (props.image) {
-            const res = await handleUpload(props.image);
-            const { data } = await res;
+            try {
+              const res = await handleUpload(props.image);
+              const { data } = await res;
 
-            if (data.message === 1) {
-              navigate("/inspect");
-            } else {
-              alert("Something went wrong. Please try again.");
+              if (data.message === 1) {
+                navigate("/inspect");
+              } else {
+                alert("Something went wrong. Please try again.");
+              }
+            } catch (e) {
+              console.log(e);
             }
           }
         }}
