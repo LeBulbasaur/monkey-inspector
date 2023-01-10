@@ -12,14 +12,7 @@ export default async function handleUpload(file: File) {
     url: "http://localhost:3000/upload",
     data: data,
   });
-  // const res = await axios({
-  //   method: "get",
-  //   url: "http://localhost:3000",
-  //   data: data,
-  // });
 
-  console.log(res);
+  // console.log(res);
   return res;
-  // return axios.post("http://localhost:3000/upload", data);
-  // return axios.get("http://localhost:3000/test");
 }
