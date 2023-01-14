@@ -1,0 +1,8 @@
+item { 
+	name:'gragas'
+	id:1
+}
+item { 
+	name:'nunu'
+	id:2
+}
