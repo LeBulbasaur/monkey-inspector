@@ -1,1 +1,34 @@
-{"monkeys": [{"id":1, "name": "gorilla", "description":"test"}]}
+{"monkeys": 
+    [
+        {
+            "id":1, 
+            "name": "Gorilla", 
+            "description":"Gorillas are gentle giants and display many human-like behaviors and emotions, such as laughter and sadness. In fact, gorillas share 98.3% of their genetic code with humans, making them our closest cousins after chimpanzees and bonobos. The largest of the great apes, gorillas are stocky animals with broad chests and shoulders, large, human-like hands, and small eyes set into hairless faces. The two gorilla species live in equatorial Africa, separated by about 560 miles of Congo Basin forest. Each has a lowland and upland subspecies. Gorillas live in family groups of usually five to 10, but sometimes two to more than 50, led by a dominant adult male—or silverback—who holds his position for years.",
+            "habitat": "Habitat: Democratic Republic of the Congo, Uganda and Cameroon "
+        },
+        {
+            "id":2, 
+            "name": "Capuchin", 
+            "description":"Capuchins, considered among the most intelligent of the New World monkeys, are named for their “caps” of hair, which resemble the cowls of Capuchin monks. These monkeys are round-headed and stockily built, with fully haired prehensile tails and opposable thumbs. The body is 30–55 cm long, with a tail of about the same length. Coloration ranges from pale to dark brown or black, with white facial markings in some of the four species. Capuchins go about in noisy troops consisting of several adults and young. They frequent the tops of tall forest trees but roam throughout the vertical range of their habitat from forest floor to canopy. Capuchins travel about 3 km per day within the range.",
+            "habitat": "Habitat: Brazil, Peru and Paraguay"
+        },
+        {
+            "id":3, 
+            "name": "Orangutan", 
+            "description":"The name orangutan means 'man of the forest' in the Malay language. In the lowland forests in which they reside, orangutans live solitary existences. They feast on wild fruits like lychees, mangosteens, and figs, and slurp water from holes in trees. They make nests in trees of vegetation to sleep at night and rest during the day. Adult male orangutans can weigh up to 200 pounds. Flanged males have prominent cheek pads called flanges and a throat sac used to make loud verbalizations called long calls. An unflanged male looks like an adult female. In a biological phenomenon unique among primates, an unflanged male can change to a flanged male for reasons that are not yet fully understood.",
+            "habitat": "Habitat: Borneo and Sumatra"
+        },
+        {
+            "id":4, 
+            "name": "Baboon", 
+            "description":"Baboons are some of the world's largest monkeys, and males of different species average from 33 to 82 pounds. Baboon bodies are 20 to 40 inches long, not including substantial tails of varying lengths. Baboons generally prefer savanna and other semi-arid habitats, though a few live in tropical forests. Like other Old World monkeys, baboons do not have prehensile (gripping) tails. But they can and do climb trees to sleep, eat, or look out for trouble. They spend much of their time on the ground. Baboons are opportunistic eaters and, fond of crops, become destructive pests to many African farmers. They eat fruits, grasses, seeds, bark, and roots, but also have a taste for meat – birds and rodents.",
+            "habitat": "Habitat: Sudan, Mauritania, and Tanzania"
+        },
+        {
+            "id":5, 
+            "name": "Chimpanzee", 
+            "description":"Chimps are highly social animals, care for their offspring for years and can live to be over 50. In fact, chimpanzees are our closest cousins; we share about 98% of our genes. In their habitat in the forests of Central Africa, chimpanzees spend most of their days in the treetops. When they do come down to earth, chimps usually travel on all fours, though they can walk on their legs like humans for as far as a mile. They use sticks to fish termites out of mounds and bunches of leaves to sop up drinking water. The chimpanzee's arms are longer than its legs. The male common chimp stands up to 1.2 m high. Male adult wild chimps weigh between 40 and 60 kg with females weighing between 27 and 50 kg.",
+            "habitat": "Habitat: Burkina Faso and Democratic Republic of the Congo"
+        }
+    ]
+}
