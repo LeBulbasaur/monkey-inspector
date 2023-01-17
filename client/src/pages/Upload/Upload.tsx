@@ -93,7 +93,7 @@ function Upload(props: Props): JSX.Element {
 
               if (data.message === 1) {
                 console.log(data)
-                navigate("/inspect");
+                //navigate("/inspect");
               } else {
                 alert("Something went wrong. Please try again.");
               }
