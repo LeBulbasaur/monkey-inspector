@@ -43,19 +43,24 @@ body{
 
 .monkey__falling {
     position: absolute;
-    bottom: 40px;
-    left: 0;
+    bottom: 0px;
+    left: -20px;
     width: 238px;
 }
 
 .bottom__line {
     border: 1px solid #809A6F;
+    background-color: #809A6F;
     width: 100%;
 
     position: absolute;
     bottom: 30px;
 }
-
+@media screen and (max-width: 1390px) {
+    .monkey__falling {
+            display: none
+        }
+}
 @media screen and (max-width: 1110px) {
     .inspect__header h1 {
         font-size: 5vw;
@@ -64,10 +69,6 @@ body{
 
     .monkey__hanging {
         display: none;
-    }
-
-    .monkey__falling {
-        display: none
     }
 
     .bottom__line {

@@ -5,6 +5,7 @@ import Inspect from "./pages/Inspect/Inspect";
 
 function App() {
   const [image, setImage] = useState<File | undefined>();
+  const [id, setId] = useState<number>(0);
 
   return (
     <BrowserRouter>
@@ -12,11 +13,20 @@ function App() {
         <Routes>
           <Route
             path="/inspect"
-            element={<Inspect image={image} setImage={setImage} />}
+            element={
+              <Inspect
+                image={image}
+                setImage={setImage}
+                id={id}
+                setId={setId}
+              />
+            }
           />
           <Route
             path="/"
-            element={<Upload image={image} setImage={setImage} />}
+            element={
+              <Upload image={image} setImage={setImage} id={id} setId={setId} />
+            }
           />
         </Routes>
       </div>

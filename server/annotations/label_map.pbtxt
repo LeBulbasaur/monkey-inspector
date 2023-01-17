@@ -1,8 +1,20 @@
 item { 
-	name:'gragas'
+	name:'goryl'
 	id:1
 }
 item { 
-	name:'nunu'
+	name:'kapucynka'
 	id:2
+}
+item { 
+	name:'orangutan'
+	id:3
+}
+item { 
+	name:'pawian'
+	id:4
+}
+item { 
+	name:'szympans'
+	id:5
 }
