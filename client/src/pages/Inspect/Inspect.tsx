@@ -14,7 +14,7 @@ type Props = {
 };
 
 function Inspect(props: Props): JSX.Element {
-  const [id, setId] = useState<number>(0);
+  const [id, setId] = useState<number>(2);
   const [monkeyName, setMonkeyName] = useState<string>("");
   const [description, setDescription] = useState<string>("");
 
@@ -100,11 +100,6 @@ function Inspect(props: Props): JSX.Element {
                     scale={[5, 5, 5]}
                     position={[1, -0.5, 2.7]}
                     rotation={[Math.PI/8, -Math.PI / 1.12, 0]}
-                  />
-                  <Pin
-                    scale={[5, 5, 5]}
-                    position={[0.3, 0.5, 2.8]}
-                    rotation={[Math.PI/20000, -Math.PI / 1.05, 0]}
                   />
 </>  
                         ) : id === 3 ? (
