@@ -14,7 +14,7 @@ type Props = {
 };
 
 function Inspect(props: Props): JSX.Element {
-  const [id, setId] = useState<string>("");
+  const [id, setId] = useState<number>(0);
   const [monkeyName, setMonkeyName] = useState<string>("");
   const [description, setDescription] = useState<string>("");
 
@@ -66,11 +66,23 @@ function Inspect(props: Props): JSX.Element {
             <pointLight position={[10, 10, 10]} />
             <Suspense fallback={null}>
               <Earth scale={[0.023, 0.023, 0.023]} />
-              <Pin
-                scale={[5, 5, 5]}
-                position={[2.6, 0, 0]}
-                rotation={[0, -Math.PI / 2, 0]}
-              />
+              {id === 0 ? (
+                <>
+                  <Pin
+                    scale={[5, 5, 5]}
+                    position={[2.6, 0, 0]}
+                    rotation={[0, -Math.PI / 2, 0]}
+                  />
+                </>
+              ) : id === 1 ? (
+                <>
+                  <Pin
+                    scale={[5, 5, 5]}
+                    position={[2.6, 1, 0]}
+                    rotation={[0, -Math.PI / 2, 0]}
+                  />
+                </>
+              ) : null}
             </Suspense>
           </Canvas>
         </div>
