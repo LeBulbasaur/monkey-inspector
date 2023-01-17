@@ -162,6 +162,11 @@ function Inspect(props: Props): JSX.Element {
                     position={[2.6, 0.5, 0.2]}
                     rotation={[-1.2, -Math.PI / 1.8, Math.PI / 222]}
                   />
+                  <Pin
+                    scale={[5, 5, 5]}
+                    position={[2.6, 0.3, -0.65]}
+                    rotation={[Math.PI / 33, -Math.PI / 2.3, 0]}
+                  />
                 </>
               ) : null}
             </Suspense>
