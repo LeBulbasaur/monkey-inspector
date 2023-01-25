@@ -120,7 +120,7 @@ function Upload(props: Props): JSX.Element {
         )}
         <p className="upload__annotation">
           NOTE: the program recognizes five species of monkeys: gorilla,
-          orangutan, capuchin, baboon, chimpanzee
+          capuchin, baboon, chimpanzee
         </p>
       </div>
       <img

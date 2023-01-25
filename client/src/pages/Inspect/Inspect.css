@@ -59,8 +59,24 @@
     line-height: 59px;
     margin: 0;
 }
+.inspect__canvas__data__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.inspect__canvas__data__container p {
+    max-width: 440px;
+}
 
 .inspect__canvas__container {
+  flex-direction: column;
   position: relative;
   width: 494px;
   height: 494px;
