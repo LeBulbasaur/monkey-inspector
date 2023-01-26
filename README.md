@@ -12,10 +12,10 @@ This website allows users to upload a photo of a monkey by using the drag and dr
 
 ## Technical Details
 
-•	The website uses a combination of machine learning algorithms and image recognition technology to identify the species of monkey in the uploaded photo.
-•	The website is optimized for the most common species of monkeys, but may not be able to identify all species.
-•	The information about the specific species is pulled from a JSON and presented to the user on the next page.
-•	The website is mobile-friendly and responsive for an optimal user experience on all devices.
+- The website uses a combination of machine learning algorithms and image recognition technology to identify the species of monkey in the uploaded photo.
+-	The website is optimized for the most common species of monkeys, but may not be able to identify all species.
+-	The information about the specific species is pulled from a JSON and presented to the user on the next page.
+-	The website is mobile-friendly and responsive for an optimal user experience on all devices.
 
 ## Technologies:
 •	React
