@@ -30,3 +30,6 @@ This website allows users to upload a photo of a monkey by using the drag and dr
 ## Conclusion
 
 This website allows users to quickly and easily identify the species of a monkey by using the drag and drop mechanic to upload a photo. The website uses advanced image recognition technology to process the photo and redirect the user to a page with information about the specific species of monkey. The website is easy to use and optimized for the most common species of monkeys. The connection to the server on port 3000 at the "upload" path ensures efficient image processing and species identification. The use of React and Typescript in the development of the website provides a smooth user experience and efficient code structure.
+
+<img width="313" alt="image" src="https://user-images.githubusercontent.com/59770761/214831424-b5f2bdd3-fc4d-4fd5-bad2-95e592bfb1af.png">
+
