@@ -23,6 +23,9 @@ This website allows users to upload a photo of a monkey by using the drag and dr
 •	Axios
 •	React Dropzone
 •	Vite
+•	Python
+•	Flask
+•	Tensorflow
 
 ## Conclusion
 
